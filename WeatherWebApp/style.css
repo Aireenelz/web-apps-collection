@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+
+    /* make the elements to be at center of web page */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherForm {
+    margin: 10px; /* space between (input field + button) from other elements */
+}
+
+.cityInput {
+    padding: 10px; /* space between inside text and border */
+    margin: 10px; /* space between border to other element outside */
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
+    border-radius: 10px; /* border corners */
+    width: 300px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; /* when user hover cursor over the button, the cursor change to pointer shape */
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(160, 81%, 42%);
+}
+
+.card {
+    background: linear-gradient(180deg, hsl(212, 100%, 75%), hsl(47, 100%, 50%));
+    padding: 50px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+    min-width: 300px;
+
+    /* center the items in the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.cityDisplay, .tempDisplay {
+    font-size: 3rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0, 0.75);
+    margin-bottom: 25px;
+}
+
+.descDisplay {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.humidityDisplay {
+    margin: 0;
+}
+
+.weatherEmoji {
+    margin: 0;
+    font-size: 7rem;
+}
+
+.errorDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
