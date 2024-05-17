@@ -1,5 +1,5 @@
 # Web Applications Collection
-This repository contains user-friendly web applications created to enhance understanding of web development workflow and code optimization.
+This repository contains user-friendly web applications created to enhance understanding of frontend web development workflow and code optimization.
 
 ## Applications Included:
 1. Weather App
